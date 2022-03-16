@@ -108,6 +108,10 @@ img:hover:not(.img img){
      text-decoration: none;
 }
 
+.text a:hover{
+     background-color: #eee;
+}
+
 .header h2{
      padding-right: 1rem;
      padding-left: 1rem;
