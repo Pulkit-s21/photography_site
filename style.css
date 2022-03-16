@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html,body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    background-color: #eee;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.card{
+     margin: auto;
+     background-color: #fff;
+     width: 58vw;    
+     border: none;
+     outline: none;
+     box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+}
+
+.main{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     min-height: 100vh;
+}
+
+.text{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 1em 2em;
+     flex: 2;
+}
+
+.text h1{
+     text-transform: uppercase;
+     font-size: 2.5rem;
+     font-weight: 400;
+     margin: 0;
+}
+
+.text h2{
+     font-size: 1.2rem;
+     font-weight: 400;
+     color: #888;
+     margin: 0;
+}
+
+.text button:hover{
+     background-color: #eee;
+}
+
+.img{
+     flex: 2;
+}
+
+.img img{
+     height: 100vh;
+     background-position: center;
+     background-attachment: fixed;
+}
+
+img{
+     transition: all 500ms ease-in-out;
+}
+
+img:hover:not(.img img){
+     transform: scale(1.05);
+}
+
+.header{
+     text-align: center;
+     background-color: #333;
+     padding: 1.5rem;
+     color: #fff;
+}
+
+.text a{
+     padding: 1rem 3rem;
+     border: 1px solid #777;
+     color: #000;
+     background-color: transparent;
+     border-radius: 35px;
+     margin-top: 3em;
+     transition: all 500ms ease;
+     text-decoration: none;
+}
+
+.header h2{
+     padding-right: 1rem;
+     padding-left: 1rem;
+     border-left: dotted 1px white;
+     border-right: dotted 1px white;
+     font-size: 2rem;
+     display: inline-block;
+}
+
+img{
+     width: 100%;
+     display: block;
+}
+
+.caption{
+     padding: 0.8rem;
+     margin-top: 2em;
+     text-align: center;
+}
+.caption h3{
+     font-weight: 700;
+}
+
+.caption p{
+     font-weight: 500;
+}
+
+.contact{
+     margin: 5em 0;
+     text-align: center;
+}
+
+.contact h1{
+     font-size: 4rem;
+}
+
+.contact h3{
+     font-size: 1.2rem;
+     margin: 1em 0;
+}
+
+.contact a{
+     color: rgb(88, 134, 218);
+     text-decoration: none;
+     font-weight: 700;
+}
+
+.contact span{
+     color: #000;
+     font-weight: 700;
+}
+
+@media (max-width: 1100px){
+     .text{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin: 3em 2em;
+          flex: 2;
+     }
+     .main{
+          flex-direction: column;
+     }
+}
